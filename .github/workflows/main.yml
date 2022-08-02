@@ -16,10 +16,7 @@ jobs:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
       - name: Change wrapper permissions
-        run: chmod +x ./gradlew
-      # Run Tests Build
-      - name: Run gradle tests
-        run: ./gradlew test
+        run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew build
       - name: Upload APK
